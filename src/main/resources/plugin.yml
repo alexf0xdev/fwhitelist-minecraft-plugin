@@ -1,0 +1,10 @@
+name: FWhitelist
+version: '${project.version}'
+main: me.alexf0x.fwhitelist.FWhitelist
+api-version: '1.20'
+authors: [AlexF0x]
+description: Плагин на вайтлист с добавлением в Discord
+website: github.com/alexf0xdev
+commands:
+  fwhitelist:
+    aliases: [whitelist, wl]

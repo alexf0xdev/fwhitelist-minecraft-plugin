@@ -1,0 +1,64 @@
+# FWhitelist
+# Developed by github.com/alexf0xdev
+
+whitelist: true
+
+discord:
+  bot-token: ''
+  guild-id: ''
+  channel-id: ''
+  # if empty, the role is not issued
+  whitelisted-role-id: ''
+  activity: 'Minecraft'
+
+messages:
+  no-permission: '&cNo permission'
+  not-enough-arguments: '&cNot enough arguments'
+  # Placeholders: {player} - player name
+  whitelist: '&fYou are not on the whitelist! Go to the closed Discord server and enter &6/add {player}'
+  enabled: '&aWhitelist mode enabled'
+  already-enabled: '&cWhitelist mode is already enabled'
+  disabled: '&cWhitelist mode disabled'
+  already-disabled: '&cWhitelist mode is already disabled'
+  # Placeholders: {player} - player name
+  added-to-whitelist: '&fYou have added player &6{player} &fto whitelist'
+  # Placeholders: {player} - player name
+  already-in-whitelist: '&fPlayer &6{player} &falready in whitelist'
+  # Placeholders: {player} - player name
+  removed-from-whitelist: '&fYou have removed player &6{player} &ffrom whitelist'
+  # Placeholders: {player} - player name
+  not-in-whitelist: '&fPlayer &6{player} &fis not in whitelist'
+  list: '&fList of players in whitelist:'
+  # Placeholders: {player} - player name, {discordId} - discord id
+  list-item: '  &6- {player} | {discordId}'
+  list-empty: '&cThe list of players in whitelist is empty'
+  reloaded: '&aPlugin successfully reloaded'
+  help:
+    - '&fHelp for FWhitelist commands:'
+    - '  &6/wl on/off &f- enable/disable whitelist mode'
+    - '  &6/wl add nickname discord_id &f- add player to whitelist'
+    - '  &6/wl remove nickname/discord_id &f- remove player from whitelist'
+    - '  &6/wl list &f- show list of players in whitelist'
+    - '  &6/wl reload &f- reloads plugin configuration'
+    - '  &6/wl help &f- displays this message'
+  discord:
+    # Placeholders: {channel} - #channel
+    only-in-channel: 'Commands can only be used in a channel {channel}'
+    add-description: "Add yourself to the whitelist"
+    add-option-description: 'Your nickname in Minecraft'
+    # Placeholders: {player} - player name
+    added-to-whitelist: 'Minecraft nickname **{player}** has been successfully added to whitelist'
+    # Placeholders: {player} - player name
+    already-in-whitelist: 'Minecraft nickname **{player}** is already in whitelist.'
+    # Placeholders: {player} - player name
+    already-connected: 'Your discord account already has a minecraft nickname **{player}** added to it. If you want to unlink it, use **/remove**'
+    info-description: 'View a linked nickname'
+    remove-description: 'Remove yourself from the whitelist'
+    # Placeholders: {player} - player name
+    removed-from-whitelist: 'Minecraft nickname **{player}** has been successfully removed from whitelist'
+    # Placeholders: {player} - player name
+    info: 'Your Discord account has the nickname **{player}** tied to it. To unlink it - use **/remove**'
+    not-connected: "You don't have a **minecraft nickname** attached. To bind it - use **/add minecraft_nickname**"
+
+
+
